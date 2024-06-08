@@ -21,7 +21,12 @@ class ComposerStaticInit48beff312427bb1da61fc1bbc49f1ee1
     );
 
     public static $classMap = array (
+        'AddIndexesOnAllTables' => __DIR__ . '/../..' . '/src/database/migrations/2022_06_02_120100_add_indexes_on_all_tables.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'CreateBancardConfirmationsTable' => __DIR__ . '/../..' . '/src/database/migrations/2021_10_16_100100_create_bancard_confirmations_table.php',
+        'CreateBancardRollbacksTable' => __DIR__ . '/../..' . '/src/database/migrations/2021_10_16_100200_create_bancard_rollbacks_table.php',
+        'CreateBancardSingleBuysTable' => __DIR__ . '/../..' . '/src/database/migrations/2021_10_16_100000_create_bancard_single_buys_table.php',
+        'CreateBancardUserCardsTable' => __DIR__ . '/../..' . '/src/database/migrations/2021_10_16_100300_create_bancard_user_cards_table.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

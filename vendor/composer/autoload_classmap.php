@@ -6,5 +6,10 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddIndexesOnAllTables' => $baseDir . '/src/database/migrations/2022_06_02_120100_add_indexes_on_all_tables.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'CreateBancardConfirmationsTable' => $baseDir . '/src/database/migrations/2021_10_16_100100_create_bancard_confirmations_table.php',
+    'CreateBancardRollbacksTable' => $baseDir . '/src/database/migrations/2021_10_16_100200_create_bancard_rollbacks_table.php',
+    'CreateBancardSingleBuysTable' => $baseDir . '/src/database/migrations/2021_10_16_100000_create_bancard_single_buys_table.php',
+    'CreateBancardUserCardsTable' => $baseDir . '/src/database/migrations/2021_10_16_100300_create_bancard_user_cards_table.php',
 );

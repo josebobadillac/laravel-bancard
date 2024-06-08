@@ -15,7 +15,6 @@ class BancardServiceProvider extends ServiceProvider
             __DIR__.'/config/bancard.php' => config_path('bancard.php'),
         ], 'bancard-configs');
 
-        // $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 
     public function register()
