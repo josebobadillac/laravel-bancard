@@ -5,7 +5,7 @@
 Install via composer
 
 ```bash
-composer require Mancoide/laravel-bancard
+composer require composer require mancoide/laravel-bancard:dev-main
 ```
 Publish config and migrations
 
