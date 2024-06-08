@@ -1,5 +1,5 @@
 {
-    "name": "mancoide/bancard",
+    "name": "mancoide/laravel-bancard",
     "description": "This project has been created for facilitate bancard api integrations",
     "type": "project",
     "license": "MIT",
