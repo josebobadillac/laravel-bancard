@@ -1,0 +1,32 @@
+{
+    "name": "mancoide/bancard",
+    "description": "This project has been created for facilitate bancard api integrations",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mancoide\\Bancard\\": "src/"
+        },
+        "classmap": [
+            "database/migrations"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Henry Gonzalez",
+            "email": "adrianhenrygo13@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1", 
+        "illuminate/http": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mancoide\\Bancard\\BancardServiceProvider"
+            ]
+        }
+    }
+}
