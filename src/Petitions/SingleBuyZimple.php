@@ -9,14 +9,16 @@ class SingleBuyZimple extends Petition
 {
     private SingleBuyModel $payload;
 
-    public function __construct(string $description, float $amount, string $phone_number, string $process_id = null)
+    public function __construct(string $description, float $amount, string $phone_number, ?string $process_id = null, ?string $return_url = null, ?string $cancel_url = null)
     {
         $payload = SingleBuyModel::create([
             'description' => $description, 
             'amount' => $amount, 
             'currency' => 'PYG',
             'additional_data' => $phone_number,
-            'process_id' => $process_id
+            'process_id' => $process_id,
+            'return_url' => $return_url,
+            'cancel_url' => $cancel_url,
         ]);
         $this->payload = SingleBuyModel::find($payload->id);
     }
@@ -40,8 +42,8 @@ class SingleBuyZimple extends Petition
                 'amount' => "{$this->payload->amount}", 
                 'additional_data' => $this->payload->additional_data, 
                 'description' => $this->payload->description, 
-                'return_url' => config('bancard.single_buy_return_url'), 
-                'cancel_url' => config('bancard.single_buy_cancel_url'),
+                'return_url' => $this->payload->return_url,
+                'cancel_url' => $this->payload->cancel_url,
                 'zimple' => 'S'
             ]
         ];

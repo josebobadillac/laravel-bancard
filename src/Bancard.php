@@ -20,7 +20,7 @@ class Bancard
 {
     public static string $production = 'https://vpos.infonet.com.py';
     public static string $staging = 'https://vpos.infonet.com.py:8888';
-    public static string $script = 'checkout/javascript/dist/bancard-checkout-3.0.0.js';
+    public static string $script = 'checkout/javascript/dist/bancard-checkout-4.0.0.js';
 
     public static function isStaging(): bool
     {
@@ -59,9 +59,9 @@ class Bancard
      * @param bool $pre_authorize (Optional) Indicates if the order must be pre-authorized.
      * @return Response
      */
-    public static function singleBuy(string $description, float $amount, string $process_id = null, bool $pre_authorize = false): Response
+    public static function singleBuy(string $description, float $amount, ?string $process_id = null, ?string $return_url = null, ?string $cancel_url = null, bool $pre_authorize = false): Response
     {
-        $operation = new SingleBuy($description, $amount, $process_id, $pre_authorize);
+        $operation = new SingleBuy($description, $amount, $process_id, $return_url, $cancel_url, $pre_authorize);
         return $operation->makeRequest();
     }
 
@@ -74,9 +74,9 @@ class Bancard
      * @param string|null $process_id Order ID
      * @return Response
      */
-    public static function singleBuyZimple(string $description, float $amount, string $phone_number, string $process_id = null): Response
+    public static function singleBuyZimple(string $description, float $amount, string $phone_number, ?string $process_id = null, ?string $return_url = null, ?string $cancel_url = null): Response
     {
-        $operation = new SingleBuyZimple($description, $amount, $phone_number, $process_id);
+        $operation = new SingleBuyZimple($description, $amount, $phone_number, $process_id, $return_url, $cancel_url);
         return $operation->makeRequest();
     }
 

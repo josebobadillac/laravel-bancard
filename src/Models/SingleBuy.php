@@ -21,7 +21,9 @@ class SingleBuy extends BaseModel
         'status', 
         'process_id', 
         'zimple',
-        'pre_authorization'
+        'pre_authorization',
+        'return_url',
+        'cancel_url',
     ];
 
     protected $casts = [

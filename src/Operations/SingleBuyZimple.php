@@ -13,13 +13,17 @@ class SingleBuyZimple extends Operation
     private float $amount;
     private string $phone_number;
     private string $process_id;
+    private ?string $return_url;
+    private ?string $cancel_url;
 
-    public function __construct(string $description, float $amount, string $phone_number, string $process_id = null)
+    public function __construct(string $description, float $amount, string $phone_number, ?string $process_id = null, ?string $return_url = null, ?string $cancel_url = null)
     {
         $this->description = $description;
         $this->amount = $amount;
         $this->phone_number = $phone_number;
         $this->process_id = $process_id;
+        $this->return_url = $return_url;
+        $this->cancel_url = $cancel_url;
     }
 
     protected static function getResource(): string
@@ -29,7 +33,7 @@ class SingleBuyZimple extends Operation
 
     protected function getPetition(): Petition
     {
-        return new SingleBuyZimplePetition($this->description, $this->amount, $this->phone_number, $this->process_id);
+        return new SingleBuyZimplePetition($this->description, $this->amount, $this->phone_number, $this->process_id, $this->return_url, $this->cancel_url);
     }
 
     protected function handleSuccess(Petition $petition, Response $response): void

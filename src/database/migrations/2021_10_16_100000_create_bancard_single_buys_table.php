@@ -29,7 +29,6 @@ class CreateBancardSingleBuysTable extends Migration
         //Case your conection name is diferent, you need configurate this. o adjust if is necesary
         if(env('DB_CONNECTION') == 'mysql') {
             DB::statement('ALTER Table bancard_single_buys ADD shop_process_id INTEGER NOT NULL UNIQUE AUTO_INCREMENT;');
-
         } 
 
         if(env('DB_CONNECTION') == 'pgsql') {

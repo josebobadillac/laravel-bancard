@@ -9,13 +9,15 @@ class SingleBuy extends Petition
 {
     private SingleBuyModel $payload;
 
-    public function __construct(string $description, float $amount, string $process_id = null, bool $pre_authorization = false)
+    public function __construct(string $description, float $amount, ?string $process_id = null, ?string $return_url = null, ?string $cancel_url = null, bool $pre_authorization = false)
     {
         $payload = SingleBuyModel::create([
             'description' => $description, 
             'amount' => $amount, 
             'currency' => 'PYG',
             'process_id' => $process_id,
+            'return_url' => $return_url,
+            'cancel_url' => $cancel_url,
             'pre_authorization' => $pre_authorization
         ]);
         $this->payload = SingleBuyModel::find($payload->id);
@@ -39,8 +41,8 @@ class SingleBuy extends Petition
                 'currency' => $this->payload->currency, 
                 'amount' => "{$this->payload->amount}", 
                 'description' => $this->payload->description,
-                'return_url' => config('bancard.single_buy_return_url'), 
-                'cancel_url' => config('bancard.single_buy_cancel_url')
+                'return_url' => $this->payload->return_url,
+                'cancel_url' => $this->payload->cancel_url
             ]
         ];
 
