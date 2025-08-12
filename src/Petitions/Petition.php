@@ -1,6 +1,6 @@
 <?php 
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
 abstract class Petition
 {

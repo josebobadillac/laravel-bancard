@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, TokenCharge as TokenCargePetition};
+use josebobadillac\Bancard\Petitions\{Petition, TokenCharge as TokenCargePetition};
 
 class TokenCharge extends Operation
 {

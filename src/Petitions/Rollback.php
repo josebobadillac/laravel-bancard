@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
-use Mancoide\Bancard\Bancard;
-use Mancoide\Bancard\Models\Rollback as RollbackModel;
+use josebobadillac\Bancard\Bancard;
+use josebobadillac\Bancard\Models\Rollback as RollbackModel;
 
 class Rollback extends Petition
 {

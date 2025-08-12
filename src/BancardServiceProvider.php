@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard;
+namespace josebobadillac\Bancard;
 
 use Illuminate\Support\ServiceProvider;
-use Mancoide\Bancard\Trait\PublishesMigrations;
+use josebobadillac\Bancard\Trait\PublishesMigrations;
 
 class BancardServiceProvider extends ServiceProvider
 {

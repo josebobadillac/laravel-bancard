@@ -1,6 +1,6 @@
 <?php
 
-namespace Mancoide\Bancard\Models;
+namespace josebobadillac\Bancard\Models;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;

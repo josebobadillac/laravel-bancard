@@ -1,10 +1,10 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
-use Mancoide\Bancard\Bancard;
+use josebobadillac\Bancard\Bancard;
 use Illuminate\Support\Facades\Http;
-use Mancoide\Bancard\Petitions\Petition;
+use josebobadillac\Bancard\Petitions\Petition;
 use Illuminate\Http\Client\{Response, RequestException};
 
 abstract class Operation

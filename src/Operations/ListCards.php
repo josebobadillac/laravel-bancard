@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, ListCards as ListCardsPetition};
+use josebobadillac\Bancard\Petitions\{Petition, ListCards as ListCardsPetition};
 
 class ListCards extends Operation
 {

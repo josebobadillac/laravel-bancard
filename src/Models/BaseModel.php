@@ -1,6 +1,6 @@
 <?php
 
-namespace Mancoide\Bancard\Models;
+namespace josebobadillac\Bancard\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;

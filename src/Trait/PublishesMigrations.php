@@ -1,6 +1,6 @@
 <?php
 
-namespace Mancoide\Bancard\Trait;
+namespace josebobadillac\Bancard\Trait;
 
 use Generator;
 use Illuminate\Support\Str;

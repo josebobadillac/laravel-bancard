@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
-use Mancoide\Bancard\Bancard;
-use Mancoide\Bancard\Models\SingleBuy as SingleBuyModel;
+use josebobadillac\Bancard\Bancard;
+use josebobadillac\Bancard\Models\SingleBuy as SingleBuyModel;
 
 class SingleBuyZimple extends Petition
 {

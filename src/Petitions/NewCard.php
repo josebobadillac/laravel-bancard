@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
-use Mancoide\Bancard\Bancard;
-use Mancoide\Bancard\Models\Card;
+use josebobadillac\Bancard\Bancard;
+use josebobadillac\Bancard\Models\Card;
 
 class NewCard extends Petition
 {

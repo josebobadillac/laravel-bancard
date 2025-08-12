@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, Confirmation as ConfirmationPetition};
+use josebobadillac\Bancard\Petitions\{Petition, Confirmation as ConfirmationPetition};
 
 class Confirmation extends Operation
 {

@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, SingleBuy as SingleBuyPetition};
+use josebobadillac\Bancard\Petitions\{Petition, SingleBuy as SingleBuyPetition};
 
 class SingleBuy extends Operation
 {

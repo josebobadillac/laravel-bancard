@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, PreAuthorizationConfirm as PreAuthorizationConfirmPetition};
+use josebobadillac\Bancard\Petitions\{Petition, PreAuthorizationConfirm as PreAuthorizationConfirmPetition};
 
 class PreAuthorizationConfirm extends Operation
 {

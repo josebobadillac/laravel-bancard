@@ -1,8 +1,8 @@
 <?php
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
-use Mancoide\Bancard\Models\Confirmation as ConfirmationModel;
+use josebobadillac\Bancard\Models\Confirmation as ConfirmationModel;
 
 class WebhookConfirm
 {

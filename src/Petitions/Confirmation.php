@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
-use Mancoide\Bancard\Bancard;
-use Mancoide\Bancard\Models\Confirmation as ConfirmationModel;
+use josebobadillac\Bancard\Bancard;
+use josebobadillac\Bancard\Models\Confirmation as ConfirmationModel;
 
 class Confirmation extends Petition
 {

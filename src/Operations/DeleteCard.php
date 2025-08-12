@@ -1,9 +1,9 @@
 <?php 
 
-namespace Mancoide\Bancard\Operations;
+namespace josebobadillac\Bancard\Operations;
 
 use Illuminate\Http\Client\Response;
-use Mancoide\Bancard\Petitions\{Petition, DeleteCard as DeleteCardPetition};
+use josebobadillac\Bancard\Petitions\{Petition, DeleteCard as DeleteCardPetition};
 
 class DeleteCard extends Operation
 {

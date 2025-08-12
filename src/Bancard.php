@@ -1,8 +1,8 @@
 <?php 
 
-namespace Mancoide\Bancard;
+namespace josebobadillac\Bancard;
 
-use Mancoide\Bancard\Operations\{
+use josebobadillac\Bancard\Operations\{
     PreAuthorizationConfirm,
     SingleBuy,
     NewCard,

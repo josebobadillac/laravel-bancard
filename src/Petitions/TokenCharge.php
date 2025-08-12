@@ -1,9 +1,9 @@
 <?php
 
-namespace Mancoide\Bancard\Petitions;
+namespace josebobadillac\Bancard\Petitions;
 
-use Mancoide\Bancard\Bancard;
-use Mancoide\Bancard\Models\{SingleBuy as SingleBuyModel, Confirmation as ConfirmationModel};
+use josebobadillac\Bancard\Bancard;
+use josebobadillac\Bancard\Models\{SingleBuy as SingleBuyModel, Confirmation as ConfirmationModel};
 
 class TokenCharge extends Petition
 {
