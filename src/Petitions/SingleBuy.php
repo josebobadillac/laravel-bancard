@@ -26,7 +26,7 @@ class SingleBuy extends Petition
     protected function token(): string
     {
         $privateKey = Bancard::privateKey();
-        $token = "{$privateKey}{$this->payload->shop_process_id}{$this->payload->amount}{$this->payload->currency}";
+        $token = "{$privateKey}{$this->payload->process_id}{$this->payload->amount}{$this->payload->currency}";
 
         return hash('md5', $token);
     }
@@ -37,7 +37,7 @@ class SingleBuy extends Petition
             'public_key' => Bancard::publicKey(), 
             'operation' => [
                 'token' => $this->token(), 
-                'shop_process_id' => $this->payload->shop_process_id, 
+                'shop_process_id' => $this->payload->process_id, 
                 'currency' => $this->payload->currency, 
                 'amount' => "{$this->payload->amount}", 
                 'description' => $this->payload->description,
