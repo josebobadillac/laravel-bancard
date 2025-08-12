@@ -23,7 +23,7 @@ Este proyecto se distribuye bajo licencia MIT, igual que el original.
 Install via composer
 
 ```bash
-composer require composer require josebobadillac/laravel-bancard:dev-main
+composer require josebobadillac/laravel-bancard:dev-main
 ```
 Publish config and migrations
 
@@ -247,4 +247,5 @@ $record = Confirmation::where('shop_process_id', '')->first();
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
 
