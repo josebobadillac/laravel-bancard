@@ -8,9 +8,9 @@ class Rollback extends BaseModel
 {
     protected $table = 'bancard_rollbacks';
 
-    public $incrementing = false;
+    //public $incrementing = false;
 
-    protected $keyType = 'string';
+    //protected $keyType = 'string';
 
     protected $fillable = [
         'process_id', 
@@ -20,14 +20,14 @@ class Rollback extends BaseModel
         'dsc'
     ];
 
-    protected $casts = [
-        'id' => 'string',
-    ];
+    // protected $casts = [
+    //     'id' => 'string',
+    // ];
 
-    protected static function booted()
-    {
-        static::creating(function ($rollback) {
-            $rollback->id = Str::uuid();
-        });
-    }
+    // protected static function booted()
+    // {
+    //     static::creating(function ($rollback) {
+    //         $rollback->id = Str::uuid();
+    //     });
+    // }
 }
