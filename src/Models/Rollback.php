@@ -13,7 +13,7 @@ class Rollback extends BaseModel
     protected $keyType = 'string';
 
     protected $fillable = [
-        'shop_process_id', 
+        'process_id', 
         'status', 
         'key', 
         'level', 

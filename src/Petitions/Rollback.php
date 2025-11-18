@@ -38,7 +38,7 @@ class Rollback extends Petition
         $message = $data['messages'][0] ?? [];
 
         RollbackModel::create([
-            'shop_process_id' => $this->payload, 
+            'process_id' => $this->payload, 
             'status' => $data['status'], 
             'key' => $message['key'] ?? '-', 
             'level' => $message['level'] ?? '-', 
