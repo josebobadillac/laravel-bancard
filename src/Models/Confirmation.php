@@ -8,9 +8,9 @@ class Confirmation extends BaseModel
 {
     protected $table = 'bancard_confirmations';
 
-    public $incrementing = false;
+    // public $incrementing = false;
 
-    protected $keyType = 'string';
+    // protected $keyType = 'string';
 
     protected $fillable = [
         'shop_process_id', 
@@ -31,9 +31,9 @@ class Confirmation extends BaseModel
         'command'
     ];
 
-    protected $casts = [
-        'id' => 'string',
-    ];
+    // protected $casts = [
+    //     'id' => 'string',
+    // ];
 
     public function getSourceAttribute()
     {
@@ -58,10 +58,10 @@ class Confirmation extends BaseModel
         return $options[$this->risk_index] ?? $options[0];
     }
 
-    protected static function booted()
-    {
-        static::creating(function ($confirmation) {
-            $confirmation->id = Str::uuid();
-        });
-    }
+    // protected static function booted()
+    // {
+    //     static::creating(function ($confirmation) {
+    //         $confirmation->id = Str::uuid();
+    //     });
+    // }
 }
